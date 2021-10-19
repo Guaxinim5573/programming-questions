@@ -1,0 +1,45 @@
+Usamos fscanf para ler os 10 números dentro de um for-loop.
+int notas[10];
+for(int i = 0;i < 10;i++) {
+    int nota;
+    printf("Insira a nota do aluno %d: ", i + 1);
+    while(fscanf(stdin, "%d", &nota)==1) {break;}
+    notas[i] = nota;
+}
+
+A) Para ter a soma é simples, precisamos apenas passar por cada número e adicionar o atual a soma total:
+
+int soma = 0;
+for(int i = 0;i < 10;i++) {
+    soma += notas[i];
+}
+printf("Soma dos números: %d\n", soma);
+
+B) Para ter a média é mais simples ainda. Usamos Type Casting para transformar a "soma" em um float, depois aplicamos a fórmula de média (media = soma / quantidade de itens)
+float media = (float) soma / 10;
+printf("Média dos números: %.2f\n", media);
+
+C) Começamos com a variável "maior" que guarda o maior número até agora. O valor dela começa como -2147483647 já que é o menor número que um "int" pode guardar.
+int maior = -2147483647;
+for(int i = 0;i < 10;i++) {
+    if(notas[i] > maior) {
+        maior = notas[i];
+    }
+}
+printf("O maior número: %d\n", maior);
+
+D) Fazemos o mesmo que acima, mas ao contrário. Além de pegar o maior, pegamos o menor.
+int menor = 2147483647;
+for(int i = 0;i < 10;i++) {
+    if(notas[i] < menor) {
+        menor = notas[i];
+    }
+}
+printf("O menor número: %d\n", menor);
+
+
+
+Espero ter ajudado!
+Também deixei o código anexado (code.txt) e também uma versão otimizada (otimized.txt) que usa apenas 1 loop para pegar as notas e calcular as informações.
+Por favor, se ajudei, marque minha resposta como correta.
+Happy Coding :)
