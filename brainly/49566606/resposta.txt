@@ -1,0 +1,12 @@
+O código do programa consiste apenas em ler o input do usuários várias vezes e validar ele.
+
+E depois, como o código falou, usar uma estrutura SWITCH-CASE para saber qual operação o usuário fez.
+
+Questão também especifica o uso da função setlocale para mostrar corretamente caracteres do idioma português.
+
+Código:
+
+Brainly está marcando o código como link, então estou deixando ele como arquivo de texto nos anexos dessa resposta.
+
+Se ajudei, por favor, marque a resposta como melhor resposta.
+Happy Coding :)
