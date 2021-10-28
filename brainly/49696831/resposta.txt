@@ -1,0 +1,31 @@
+Código:
+#include <stdio.h>
+
+int main() {
+	int numero;
+	printf("Informe um número inteiro: ");
+	while(scanf("%d", &numero)==1) {break;}
+
+	if(numero >= 2 && numero <= 29) {
+		printf("O número está dentro do range esperado.\n");
+	} else {
+		printf("O número não está dentro do range esperado.\n");
+	}
+
+	if(numero % 2 == 0) {
+		printf("O número é par.\n");
+	} else {
+		printf("O número é impar.\n");
+	}
+	return 0;
+}
+
+Explicação:
+O código já é bem auto explicativo.
+Usamos a função scanf para ler um input do usuário.
+Checamos se o número é maior ou igual 2 e menor ou igual 29.
+Depois usamos a operação modulo para checar se o número é par.
+  O operador % basicamenta calcula o resto de uma divisão.
+  Quando um número é dividido por 2, ele nunca terá resto caso seja um inteiro e par, caso contrário o resto é 1.
+
+Happy Coding :)
