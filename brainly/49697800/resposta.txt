@@ -1,0 +1,22 @@
+Código:
+import math
+
+a = int(input("Digite o número A: "))
+b = int(input("Digite o número B: "))
+
+resultado = math.sqrt(a + b) + (math.sqrt(a) + math.sqrt(b))
+print("Resultado: " + str(resultado))
+print("Resultado é " + ("maior" if resultado > 100 else "menor") + " que 100.")
+
+Explicação:
+O código é bem simples.
+Primeiro importamos a biblioteca padrão "math". Com ela podemos facilmente fazer a operação de raiz quadrada (math.sqrt).
+Depois disso lemos 2 números do input do usuário.
+
+Se entendi bem a conta, a estrutura dela é o seguinte:
+sqrt(a + b) + (sqrt(a) + sqrt(b))
+
+Fazemos essa conta e guardamos na variável "resultado".
+Após isso nós mostramos o resultado e também dizemos se o resultado é maior ou menor que 100.
+
+Happy Coding :)
